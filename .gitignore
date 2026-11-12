@@ -1,0 +1,4 @@
+analysis/data/
+analysis/model.json
+analysis/.ipynb_checkpoints/
+__pycache__/

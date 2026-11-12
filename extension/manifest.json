@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "ScrollNudge",
+  "version": "1.0.0",
+  "description": "Logs scrolling on social sites, asks short check-in questions, and shows gentle nudges for a self-experiment on mindless scrolling. All data stays on this computer.",
+  "permissions": ["storage", "unlimitedStorage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_icon": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" } },
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "content_scripts": [{
+    "matches": [
+      "*://*.youtube.com/*", "*://*.instagram.com/*", "*://*.facebook.com/*", "*://*.x.com/*",
+      "*://*.twitter.com/*", "*://*.reddit.com/*", "*://*.linkedin.com/*", "*://*.tiktok.com/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

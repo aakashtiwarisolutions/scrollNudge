@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body{font:13px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#111;background:#fff;width:300px;margin:0;padding:14px}
+  h1{font-size:16px;margin:0 0 2px}.sub{color:#666;margin:0 0 12px;font-size:12px}
+  table{width:100%;border-collapse:collapse;margin-bottom:12px}td{padding:3px 0}td:last-child{text-align:right;font-weight:600}
+  button,label.btn{display:block;width:100%;box-sizing:border-box;font:inherit;border:1px solid #bbb;background:#f6f6f6;color:#111;border-radius:8px;padding:7px 10px;margin-bottom:6px;cursor:pointer;text-align:center}
+  button:hover,label.btn:hover{background:#eaeaea}.danger{color:#a00}.msg{font-size:12px;color:#333;min-height:16px}
+  input[type=file]{display:none}
+</style>
+</head>
+<body>
+<h1>ScrollNudge</h1>
+<p class="sub">Self-experiment on mindless scrolling. Data stays on this computer.</p>
+<table>
+  <tr><td>Study started</td><td id="start"></td></tr>
+  <tr><td>Day</td><td id="day"></td></tr>
+  <tr><td>Phase today</td><td id="phase"></td></tr>
+  <tr><td>Minutes logged today</td><td id="mins"></td></tr>
+  <tr><td>Check-ins answered today</td><td id="answers"></td></tr>
+  <tr><td>Nudges today</td><td id="nudges"></td></tr>
+  <tr><td>Detector</td><td id="model"></td></tr>
+</table>
+<button id="export">Export data (CSV)</button>
+<label class="btn">Load trained detector (model.json)<input id="file" type="file" accept=".json"></label>
+<button id="reset" class="danger">Restart study</button>
+<div class="msg" id="msg"></div>
+<script src="popup.js"></script>
+</body>
+</html>
