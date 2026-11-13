@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "ScrollNudge: An N-of-1 Randomized Trial of Machine-Learning-Timed Nudges Against Mindless Scrolling"
+authors:
+  - family-names: Tiwari
+    given-names: Aakash
+    affiliation: Rowan University
+version: 1.0.0
+date-released: 2026-11-13
+license: MIT
+repository-code: "https://github.com/aakashtiwarisolutions/scrollNudge"
+keywords:
+  - digital wellbeing
+  - nudges
+  - n-of-1 trial
+  - experience sampling
+  - human-computer interaction
