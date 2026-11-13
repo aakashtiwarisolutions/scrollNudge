@@ -1,6 +1,7 @@
 # ScrollNudge
 
 **Paper:** [Catching the Habit in the Act: Protocol for a Pre-Registered N-of-1 Randomized Trial of Machine-Learning-Timed Nudges Against Mindless Scrolling](paper/Tiwari_ScrollNudge_Protocol_2026.pdf)
+
 **Pre-registration:** https://osf.io/hv8cg (registered November 13, 2026, before data collection)
 
 A single-person (n-of-1) experiment on mindless scrolling. A Chrome extension records how I scroll on social sites, asks short check-in questions about how intentional my scrolling is, learns what my mindless scrolling looks like, and shows a gentle nudge when it detects it. Nudge days and no-nudge days are assigned at random, so the two can be compared fairly.
@@ -58,3 +59,33 @@ Before a trained detector is loaded, a starter rule nudges after about 15 minute
 A simulation (`analysis/power_analysis.py`) shows that 14 randomized days can detect only large effects: 80% power needs roughly halving daily scrolling time, or a nudge that makes stopping about 6 times more likely. The study is therefore a pilot for estimating effect sizes.
 
 ## Layout
+
+~~~
+extension/                            Chrome extension (Manifest V3)
+analysis/scrollnudge_analysis.ipynb   detector training and results
+analysis/power_analysis.py            simulation-based power analysis
+paper/                                study protocol paper (LaTeX and PDF)
+~~~
+
+## How to run
+
+1. Open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and select the `extension` folder.
+2. Pin the ScrollNudge icon. The study starts on the first visit to a tracked site.
+3. Use the browser as usual and answer the check-ins.
+4. After day 7: click the icon, choose **Export data (CSV)**, put the files in `analysis/data/`, and run Part 1 of the notebook. Load the new `model.json` from the popup.
+5. After day 21: export again and run the whole notebook.
+
+~~~
+pip install pandas numpy scikit-learn matplotlib notebook
+python analysis/power_analysis.py
+~~~
+
+## Status
+
+Data collection started November 13, 2026. Results will be added after day 21.
+
+## Limitations
+
+- One participant, one browser. Phone scrolling is not captured.
+- Knowing about the experiment may change behavior, especially early on.
+- 7 nudge and 7 no-nudge days can only detect fairly large effects.
