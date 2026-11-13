@@ -2,6 +2,8 @@
 
 **Paper:** [Catching the Habit in the Act: Protocol for a Pre-Registered N-of-1 Randomized Trial of Machine-Learning-Timed Nudges Against Mindless Scrolling](paper/Tiwari_ScrollNudge_Protocol_2026.pdf)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24187063.svg)](https://doi.org/10.5281/zenodo.24187063)
+
 **Pre-registration:** https://osf.io/hv8cg (registered November 13, 2026, before data collection)
 
 A single-person (n-of-1) experiment on mindless scrolling. A Chrome extension records how I scroll on social sites, asks short check-in questions about how intentional my scrolling is, learns what my mindless scrolling looks like, and shows a gentle nudge when it detects it. Nudge days and no-nudge days are assigned at random, so the two can be compared fairly.
