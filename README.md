@@ -1,10 +1,12 @@
 # ScrollNudge
 
-**Paper:** [Catching the Habit in the Act: Protocol for a Pre-Registered N-of-1 Randomized Trial of Machine-Learning-Timed Nudges Against Mindless Scrolling](paper/Tiwari_ScrollNudge_Protocol_2026.pdf)
+**Paper:** [Catching the Habit in the Act: Protocol for a Pre-Registered N-of-1 Randomized Trial of Machine-Learning-Timed Nudges Against Mindless Scrolling](Tiwari_ScrollNudge_Protocol_2026.pdf)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24187063.svg)](https://doi.org/10.5281/zenodo.24187063)
 
 **Pre-registration:** https://osf.io/hv8cg (registered November 13, 2026, before data collection)
+
+**Documentation:** [ScrollNudge_Documentation.pdf](ScrollNudge_Documentation.pdf)
 
 A single-person (n-of-1) experiment on mindless scrolling. A Chrome extension records how I scroll on social sites, asks short check-in questions about how intentional my scrolling is, learns what my mindless scrolling looks like, and shows a gentle nudge when it detects it. Nudge days and no-nudge days are assigned at random, so the two can be compared fairly.
 
@@ -66,7 +68,8 @@ A simulation (`analysis/power_analysis.py`) shows that 14 randomized days can de
 extension/                            Chrome extension (Manifest V3)
 analysis/scrollnudge_analysis.ipynb   detector training and results
 analysis/power_analysis.py            simulation-based power analysis
-paper/                                study protocol paper (LaTeX and PDF)
+Tiwari_ScrollNudge_Protocol_2026.pdf  study protocol paper
+ScrollNudge_Documentation.pdf         project documentation (Word version also included)
 ~~~
 
 ## How to run
@@ -84,7 +87,7 @@ python analysis/power_analysis.py
 
 ## Status
 
-Data collection started November 13, 2026. Results will be added after day 21.
+The protocol was pre-registered on November 13, 2026, before any data was collected. The 21-day trial is under way, and results will be added after day 21.
 
 ## Limitations
 
